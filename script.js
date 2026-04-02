@@ -100,7 +100,7 @@ const SITE = {
         },
         {
           title: "Teaching Assistant - Operating Systems",
-          organization: "PES University",
+          organization: "University of Oregon",
           skills: ["Processes", "Threads", "Scheduling", "Synchronization", "Memory Management", "File Systems"]
         }
       ]
