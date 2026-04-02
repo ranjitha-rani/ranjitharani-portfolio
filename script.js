@@ -8,7 +8,7 @@ const SITE = {
       "I am a Master's student in Computer Science at the University of Oregon. I have hands-on experience in distributed systems, cloud computing, and database systems, using technologies like Docker, Kubernetes, and Python. My academic work includes research on microservice architectures and shared-memory systems, and I am always eager to take on new technical challenges. ",
     aboutLong:
       "Sometimes I obsess over clean UI and performance. I enjoy hackathons, teaching juniors, and reading code. My goal this year: ship 3 solid projects and contribute to OSS.",
-    image: "picture.jpg", // Profile image
+    image: "picture.jpeg", // Profile image
     social: [
       { label: "LinkedIn", url: "https://www.linkedin.com/in/ranjitha-rani-b8677b236/" },
       { label: "GitHub", url: "https://github.com/ranjitha-rani" },
