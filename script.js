@@ -179,6 +179,15 @@ const SITE = {
       image: "",
       github: "",
       demo: ""
+    },
+    {
+      title: "SQLens - SQL Query Analyzer & Visualizer",
+      description: "Interactive tool for analyzing and visualizing SQL query execution plans, statistics, and schema relationships. Surfaces query bottlenecks, index optimization opportunities, and renders execution trees with latency annotations. Supports PostgreSQL and MySQL introspection.",
+      bullets: [],
+      tags: ["Python", "PostgreSQL", "MySQL", "SQL", "Query Planning"],
+      image: "",
+      github: "",
+      demo: ""
     }
   ],
 };
