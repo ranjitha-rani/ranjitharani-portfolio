@@ -306,6 +306,17 @@ p{margin:0 0 1.2rem 0;font-size:1.1rem;line-height:1.7}
 .edu-meta.period {
   font-weight: 600;
 }
+.edu-thesis {
+  margin: 1rem 0;
+  padding: 1rem 1.1rem;
+  border-left: 4px solid color-mix(in srgb, var(--accent) 35%, white);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent) 8%, var(--bg));
+  line-height: 1.6;
+}
+.edu-thesis strong {
+  color: var(--fg);
+}
 
 .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;max-width:1000px;margin:0 auto}
 .skill{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:2rem 1.5rem;text-align:center;transition:all 0.4s ease;cursor:pointer;position:relative;overflow:hidden}

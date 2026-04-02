@@ -21,13 +21,14 @@ const SITE = {
   education: [
     {
       school: "University of Oregon",
-      period: "August 2024 – Present",
+      period: "September 2024 – Present",
       degree: "Master of Science in Computer Science",
+      thesis: "SAM CFT - Crash Fault Tolerance for Shared Append-only Memory using RDMA (in progress)",
       detail: "Courses: Algorithms and Complexity, Database Processing, Data Mining, Data Science, Large Scale Systems, Probabilistic Methods in AI",
     },
     {
       school: "PES University",
-      period: "August 2020 – May 2024",
+      period: "December 2020 – June 2024",
       degree: "Bachelor of Technology in Computer Science",
       detail: "Courses: Data Structures, Algorithms, Operating Systems, DBMS, Software Engineering, Cloud Computing, Data Analytics, Big Data, Web Development, Networks",
     },
@@ -96,6 +97,11 @@ const SITE = {
           title: "Teaching Assistant - Data Science",
           organization: "University of Oregon",
           skills: ["Classification", "Regression", "Supervised Learning", "Unsupervised Learning", "Feature Engineering", "Data Visualization", "Statistical Analysis", "Machine Learning Pipelines"]
+        },
+        {
+          title: "Teaching Assistant - Operating Systems",
+          organization: "PES University",
+          skills: ["Processes", "Threads", "Scheduling", "Synchronization", "Memory Management", "File Systems"]
         }
       ]
     }
@@ -233,9 +239,13 @@ document.addEventListener('DOMContentLoaded', function() {
   (SITE.education || []).forEach(e => {
     const card = document.createElement("div");
     card.className = "edu-card";
+    const thesisHTML = e.thesis
+      ? `<div class="edu-thesis"><strong>Thesis:</strong> ${e.thesis}</div>`
+      : "";
     card.innerHTML = `
       <h3>${e.school}</h3>
       <div class="edu-meta">${e.period} • ${e.degree}</div>
+      ${thesisHTML}
       <p>${e.detail || ""}</p>
     `;
     wrap.appendChild(card);
